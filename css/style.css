@@ -44,36 +44,87 @@ nav  {
   font-family: 'Lobster', cursive;
   text-shadow: 3px 3px 2px #474747;
   margin: 0;
-  font-size: 40px;
+  font-size: 60px;
 }
 
 /**********       Create 3 column layout         ************/
-.triple-col {
+.content-one h2 {
+  padding: 30px;
+  margin: 0;
+  background-color: lightgrey;
+  text-align: center;
 }
 
-.content-two a:link {
+.content-three h2 {
+  padding: 30px;
+  margin: 0;
+  text-align: center;
+}
+.content-one {
+  background-color: lightgray;
+}
+.content-three {
+  background-color: white;
+}
+
+.triple-col {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 33% 33% 33%;
+  text-align: center;
+  padding: 20px;
+}
+
+.content-two a {
+  text-decoration: none;
+  color: red;
 }
 .content-two a:hover {
+  font-weight: bold;
 }
 
 /************* Create 4 column layout    ************************/
 .quad-col {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 24% 24% 24% 24%;
+  text-align: center;
+  padding: 20px;
 }
 
 .button {
+  background-color: yellow;
+  padding: 10px 0px;
 }
 
 footer {
+  display: flex;
+  background-color: lightgrey;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
 
 /**************** create a verticle layout for mobile devices (smaller than 600px ).    *********/
 @media all and (max-width: 600px) {
   .triple-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .quad-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   nav {
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
   }
   .nav-links {
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
   }
 }
