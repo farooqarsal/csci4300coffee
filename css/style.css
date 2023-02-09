@@ -5,26 +5,46 @@ body {
 }
 /*************   Create the menubar using flexbox. *********************************/
 nav  {
+  padding: 0 20px;
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
 }
 
 .nav-links {
+  display: flex;
+  list-style: none;
 }
 
 .nav-item a {
-
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  display: block;
 }
 .nav-item:hover {
 }
 .nav-item:hover a {
-
+  text-shadow: white;
+  color: grey;
 }
 /******* Create banner section with background image and headings on top *****/
 .banner {
   background-image:url("../images/home_banner-x489.png"); 
+  padding: 10%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  font-size: large;
 }
 .banner h1 {
   font-family: 'Lobster', cursive;
   text-shadow: 3px 3px 2px #474747;
+  margin: 0;
+  font-size: 40px;
 }
 
 /**********       Create 3 column layout         ************/
